@@ -9,7 +9,8 @@ typedef struct NodoF{
 }nodoF;
 
 typedef struct Fila{
-    nodoF *inicio, *fim;
+    nodoF* inicio;
+    nodoF* fim;
 }Fila;
 
 Fila *cria_fila();

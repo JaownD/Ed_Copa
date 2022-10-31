@@ -24,7 +24,7 @@ void pushF(Fila *f, char *pais, char *aux_pais){
 }
 
 void popF(Fila *f, char *pais, char *aux_pais){
-    nodoF *aux;
+    nodoF* aux;
     if(f->inicio == NULL){
         f->inicio = f->fim;
         strcpy(pais, f->inicio->vetor1);

@@ -1,0 +1,28 @@
+# depslib dependency file v1.0
+1667248590 source:c:\users\usuario 2\documents\github\ed_copa\filadinamica.c
+	<stdio.h>
+	"FilaDinamica.h"
+
+1667247890 c:\users\usuario 2\documents\github\ed_copa\filadinamica.h
+
+1667246839 source:c:\users\usuario 2\documents\github\ed_copa\filaestatica.c
+
+1667246839 source:c:\users\usuario 2\documents\github\ed_copa\pilhadinamica.c
+	<stdio.h>
+	"PilhaDinamica.h"
+
+1667246839 c:\users\usuario 2\documents\github\ed_copa\pilhadinamica.h
+
+1667246839 source:c:\users\usuario 2\documents\github\ed_copa\pilhaestatica.c
+	"PilhaEstatica.h"
+
+1667246839 c:\users\usuario 2\documents\github\ed_copa\pilhaestatica.h
+
+1667247601 source:c:\users\usuario 2\documents\github\ed_copa\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	"PilhaDinamica.h"
+	"FilaDinamica.h"
+

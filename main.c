@@ -7,13 +7,16 @@
 #define MAX 31
 
 int main(){
+///Variaveis
     int quant_time, quant_pote, i, j, k, aux_pote, tam_def, aux_tam, tam_menor, aux, placar, aux_placar;
     char pais[MAX], aux_pais[MAX], pais_passou[MAX];
-    char *retirado, *aux_retirado;
+    char *retirado;
+    char *aux_retirado;
     Fila *f = cria_fila();
     Fila *f_pos = cria_fila();
     Pilha *p_ranking = cria_pilha();
 
+///Leitura
     scanf("%d %d", &quant_time, &quant_pote);
 
     Pilha **potes = (Pilha**)malloc(quant_pote*sizeof(Pilha*));
@@ -48,12 +51,14 @@ int main(){
         if(k == quant_pote)
             k = 0;
         pushF(f, retirado, aux_retirado);
-        //free(retirado);
-        //free(aux_retirado);
-        //retirado = aux_retirado = NULL;
+        free(retirado);
+        free(aux_retirado);
+        retirado = aux_retirado = NULL;
     }
 
 ///Fila inicial
+    retirado = malloc(31*sizeof(char));
+    aux_retirado = malloc(31*sizeof(char));
     printf("\nFila inicial:\n");
     for(i = 0; i < quant_time/2; i++){
         popF(f, retirado, aux_retirado);
@@ -66,6 +71,8 @@ int main(){
         }
         printf("%s x %s\n", retirado, aux_retirado);
     }
+    free(retirado);
+    free(aux_retirado);
 
 ///Disputas
     srand(time(0));
@@ -156,6 +163,9 @@ int main(){
     free(f);
     free(f_pos);
     free(p_ranking);
+
+    free(retirado);
+    free(aux_retirado);
 
     return 0;
 }
